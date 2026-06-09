@@ -8,18 +8,19 @@ version = "0.1.0"
 description = "Minimal qBraid and Qiskit starter package for runtime experiments."
 readme = "README.md"
 requires-python = ">=3.10"
-license = { text = "MIT" }
+license = "MIT"
 authors = [
     { name = "Fletcher Vaughn" },
 ]
 dependencies = [
+    "fastapi>=0.115,<1",
     "qbraid[qiskit]>=0.11,<0.12",
+    "uvicorn>=0.30,<1",
 ]
 keywords = ["qbraid", "qiskit", "quantum", "openqasm"]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Developers",
-    "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
     "Programming Language :: Python :: 3 :: Only",
     "Programming Language :: Python :: 3.10",
